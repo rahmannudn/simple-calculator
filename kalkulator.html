@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="assets/kalkulator.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="flex-col">
+                <div class="display">
+                    <h3 id="operator"></h3>
+                    <h1 id="display-num">0</h1>
+                </div>
+            </div>
+            <div class="flex-col">
+                <div class="flex-row">
+                    <button class="btn btn-num" value="1">1</button>
+                    <button class="btn btn-num" value="2">2</button>
+                    <button class="btn btn-num" value="3">3</button>
+                    <button class="btn btn-cmd" value="+">+</button>
+                </div>
+                <div class="flex-row">
+                    <button class="btn btn-num" value="4">4</button>
+                    <button class="btn btn-num" value="5">5</button>
+                    <button class="btn btn-num" value="6">6</button>
+                    <button class="btn btn-cmd" value="-">-</button>
+                </div>
+                <div class="flex-row">
+                    <button class="btn btn-num" value="7">7</button>
+                    <button class="btn btn-num" value="8">8</button>
+                    <button class="btn btn-num" value="9">9</button>
+                    <button class="btn btn-cmd" value="*">*</button>
+                </div>
+                <div class="flex-row">
+                    <button class="btn btn-clr">CE</button>
+                    <button class="btn btn-num" value="0">0</button>
+                    <button class="btn btn-eql" value="=">=</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- <button id="test">Tambah Angka</button>
+            <p id="test-text"></p> -->
+            <h1>History Penghitungan</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Angka Pertama</th>
+                        <th>Operator</th>
+                        <th>Angka Kedua</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody id="history-list">
+                    <tr>
+                        <td>1</td>
+                        <td>*</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>*</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="assets/kalkulator.js"></script>
+    <script src="assets/storage.js"></script>
+</body>
+</html>

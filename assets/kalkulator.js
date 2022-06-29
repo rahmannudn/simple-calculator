@@ -56,6 +56,7 @@ btnEqual.addEventListener("click", function () {
   let result = 0;
   if (op === "+") {
     result = firstNum + secondNum;
+    displayNumber.textContent = result;
   }
   if (op === "*") {
     result = firstNum * secondNum;
@@ -65,8 +66,6 @@ btnEqual.addEventListener("click", function () {
     result = firstNum - secondNum;
     displayNumber.textContent = result;
   }
-
-  console.log(calculator.displayNumber);
 
   const history = {
     firstNumber: calculator.firstNumber,
